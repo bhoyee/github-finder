@@ -10,11 +10,11 @@ const searchUser = document.getElementById('searchUser');
 // search Input event listener
 searchUser.addEventListener('keyup', (e) => {
     //get input text
-    const userTest = e.target.value;
+    const userText = e.target.value;
 
-    if(userTest !== '') {
+    if(userText !== '') {
        // Mak http call 
-        github.getUser(userTest)
+        github.getUser(userText)
             .then(data => {
                 if(data.profile.message === 'Not Found') {
                     // Show alart
@@ -27,7 +27,7 @@ searchUser.addEventListener('keyup', (e) => {
                 }
             });
     } else {
-        ui.clearProfile();
-        // clear profile
+        ui.clearProfile(); // clear Profile
+        
     }
 });
