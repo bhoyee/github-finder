@@ -1,6 +1,6 @@
 # Github Finder
 
-Searches Github user profiles and displays profile info and the latest repositories
+Search Github user profiles and displays profile info and the latest repositories
 
 ### Version
 
